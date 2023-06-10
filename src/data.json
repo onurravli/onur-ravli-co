@@ -6,14 +6,9 @@
 	"iconUrl": "/onur_ravli.jpg",
 	"links": [
 		{
-			"title": "Github",
+			"title": "GitHub",
 			"url": "https://github.com/onurravli",
 			"image": "/github.png"
-		},
-		{
-			"title": "Medium",
-			"url": "https://medium.com/@onurravli",
-			"image": "/medium.jpg"
 		},
 		{
 			"title": "LinkedIn",
@@ -26,11 +21,6 @@
 			"image": "/twitter.png"
 		},
 		{
-			"title": "Instagram",
-			"url": "https://instagram.com/onurravli",
-			"image": "/instagram.png"
-		},
-		{
 			"title": "E-Mail",
 			"url": "mailto:onur@ravli.co",
 			"image": "/mail.png"
@@ -39,6 +29,21 @@
 			"title": "CV",
 			"url": "#",
 			"image": "/cv.png"
+		},
+		{
+			"title": "Spotify",
+			"url": "https://open.spotify.com/user/onurravli",
+			"image": "/spotify.png"
+		},
+		{
+			"title": "Medium",
+			"url": "https://medium.com/@onurravli",
+			"image": "/medium.jpg"
+		},
+		{
+			"title": "Instagram",
+			"url": "https://instagram.com/onurravli",
+			"image": "/instagram.png"
 		}
 	]
 }

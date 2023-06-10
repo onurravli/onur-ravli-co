@@ -1,29 +1,20 @@
-.link {
-	outline: none;
-}
-
 .social_link {
-	width: 400px;
-	height: 70px;
-	border-radius: 60px;
+	height: 50px;
+	border-radius: 50px;
 	background-color: #e9e9e9;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	vertical-align: middle;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	transition: 0.2s;
 	cursor: default;
 }
 
-.social_link:hover {
-	background-color: #d9d9d9;
-}
-
 .social_link .icon {
-	width: 50px;
-	height: 50px;
-	border-radius: 50px;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
 	margin-left: 10px;
 	object-fit: cover;
 }
@@ -31,7 +22,7 @@
 .social_link .title {
 	font-size: 20px;
 	font-weight: 500;
-	margin-left: 20px;
+    margin-left: 20px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -55,5 +46,14 @@
 @media (min-width: 1000px) {
 	.social_link {
 		cursor: pointer;
+	}
+}
+
+@media (max-width: 300px) {
+	.social_link .icon {
+		display: none;
+	}
+	.social_link .title {
+		margin: 0 auto;
 	}
 }

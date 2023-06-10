@@ -1,9 +1,9 @@
 import Head from "next/head";
+import Image from "next/image";
+import data from "../data.json";
 import { Montserrat } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import SocialLinks from "@/components/SocialLinks";
-import Image from "next/image";
-import data from "../data.json";
 
 const montserrat = Montserrat({
 	subsets: ["latin"],
@@ -14,9 +14,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>
-					{data.name} {data.surname}
-				</title>
+				<title>{`${data.name} ${data.surname}`}</title>
 				<meta
 					name="description"
 					content={`${data.name} ${data.surname} Personal Web Page`}
@@ -36,22 +34,23 @@ export default function Home() {
 					</div>
 					<div className={styles.name}>
 						<p style={montserrat.style}>
-							{data.name}
-							<b> {data.surname}</b>
+							{data.name} <b>{data.surname}</b>
 						</p>
 					</div>
 					<div className={styles.description}>
 						<p style={montserrat.style}>{data.desc}</p>
 					</div>
-					<div className={styles.social_links}>
-						{data.links.map((link) => (
-							<SocialLinks
-								key={link.title}
-								title={link.title}
-								url={link.url}
-								image={link.image}
-							/>
-						))}
+					<div className={styles.links}>
+						{data.links.map((link) => {
+							return (
+								<SocialLinks
+									key={link.title}
+									title={link.title}
+									url={link.url}
+									image={link.image}
+								/>
+							);
+						})}
 					</div>
 				</div>
 			</main>
