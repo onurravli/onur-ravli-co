@@ -22,7 +22,7 @@
 .social_link .title {
 	font-size: 20px;
 	font-weight: 500;
-    margin-left: 20px;
+    margin-left: 5px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -46,6 +46,10 @@
 @media (min-width: 1000px) {
 	.social_link {
 		cursor: pointer;
+		transition: 0.2s ease-in-out all;
+	}
+	.social_link:hover {
+		transform: scale(1.1);
 	}
 }
 

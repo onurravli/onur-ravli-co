@@ -25,10 +25,13 @@ export default function SocialLinks({
 						className={styles.icon}
 						alt={title}
 						src={image}
-						width={300}
-						height={300}
+						width={200}
+						height={200}
 					/>
-					<h1 className={styles.title}>{title}</h1>
+
+					<div className={styles.title}>
+						<h1 className={styles.title}>{title}</h1>
+					</div>
 				</div>
 			</Link>
 		</>

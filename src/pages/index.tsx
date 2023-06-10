@@ -41,16 +41,14 @@ export default function Home() {
 						<p style={montserrat.style}>{data.desc}</p>
 					</div>
 					<div className={styles.links}>
-						{data.links.map((link) => {
-							return (
-								<SocialLinks
-									key={link.title}
-									title={link.title}
-									url={link.url}
-									image={link.image}
-								/>
-							);
-						})}
+						{data.links.map((link) => (
+							<SocialLinks
+								key={link.id}
+								title={link.title}
+								url={link.url}
+								image={link.image}
+							/>
+						))}
 					</div>
 				</div>
 			</main>
