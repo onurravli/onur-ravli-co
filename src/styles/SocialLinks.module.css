@@ -13,7 +13,7 @@
 	vertical-align: middle;
 	margin-bottom: 20px;
 	transition: 0.2s;
-    cursor: default;
+	cursor: default;
 }
 
 .social_link:hover {
@@ -25,6 +25,7 @@
 	height: 50px;
 	border-radius: 50px;
 	margin-left: 10px;
+	object-fit: cover;
 }
 
 .social_link .title {
@@ -48,5 +49,11 @@
 	}
 	.social_link:hover {
 		background-color: #2f2f2f;
+	}
+}
+
+@media (min-width: 1000px) {
+	.social_link {
+		cursor: pointer;
 	}
 }

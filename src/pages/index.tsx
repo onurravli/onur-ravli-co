@@ -2,74 +2,49 @@ import Head from "next/head";
 import { Montserrat } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import SocialLinks from "@/components/SocialLinks";
-import photo from "/public/onur_ravli.jpg";
 import Image from "next/image";
+import data from "../data.json";
 
 const montserrat = Montserrat({
 	subsets: ["latin"],
 	weight: ["400", "500", "600", "700"],
 });
 
-const links = [
-	{
-		title: "Github",
-		url: "https://github.com/onurravli",
-		image: "/github.png",
-	},
-	{
-		title: "LinkedIn",
-		url: "https://linkedin.com/in/onurravli",
-		image: "/linkedin.png",
-	},
-	{
-		title: "Twitter",
-		url: "https://twitter.com/onurravli",
-		image: "/twitter.png",
-	},
-	{
-		title: "Instagram",
-		url: "https://instagram.com/onurravli",
-		image: "/instagram.png",
-	},
-	{
-		title: "E-Mail",
-		url: "mailto:onur@ravli.co",
-		image: "/mail.png",
-	},
-	{
-		title: "CV",
-		url: "#",
-		image: "/cv.png",
-	},
-];
-
 export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Onur Ravli</title>
-				<meta name="description" content="Onur Ravli Personal Web Page" />
+				<title>
+					{data.name} {data.surname}
+				</title>
+				<meta
+					name="description"
+					content={`${data.name} ${data.surname} Personal Web Page`}
+				/>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<link rel="icon" href="/onur_ravli.jpg" />
+				<link rel="icon" href={data.iconUrl} />
 			</Head>
 			<main className={styles.main}>
 				<div className={styles.container}>
 					<div className={styles.photo}>
-						<Image src={photo} alt="Onur Ravli" width={500} height={500} />
+						<Image
+							src={data.imageUrl}
+							alt={`${data.name} ${data.surname}'s Photo`}
+							width={500}
+							height={500}
+						/>
 					</div>
 					<div className={styles.name}>
 						<p style={montserrat.style}>
-							Onur <b>Ravli</b>
+							{data.name}
+							<b> {data.surname}</b>
 						</p>
 					</div>
 					<div className={styles.description}>
-						<p style={montserrat.style}>
-							Software Developer, Intern at Jotform, Project Scholarship Holder at
-							TUBITAK
-						</p>
+						<p style={montserrat.style}>{data.desc}</p>
 					</div>
 					<div className={styles.social_links}>
-						{links.map((link) => (
+						{data.links.map((link) => (
 							<SocialLinks
 								key={link.title}
 								title={link.title}

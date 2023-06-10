@@ -1,0 +1,44 @@
+{
+	"name": "Onur",
+	"surname": "Ravli",
+	"desc": "Software Developer, Intern at Jotform, Project Scholarship Holder at TUBITAK",
+	"imageUrl": "/onur_ravli.jpg",
+	"iconUrl": "/onur_ravli.jpg",
+	"links": [
+		{
+			"title": "Github",
+			"url": "https://github.com/onurravli",
+			"image": "/github.png"
+		},
+		{
+			"title": "Medium",
+			"url": "https://medium.com/@onurravli",
+			"image": "/medium.jpg"
+		},
+		{
+			"title": "LinkedIn",
+			"url": "https://linkedin.com/in/onurravli",
+			"image": "/linkedin.png"
+		},
+		{
+			"title": "Twitter",
+			"url": "https://twitter.com/onurravli",
+			"image": "/twitter.png"
+		},
+		{
+			"title": "Instagram",
+			"url": "https://instagram.com/onurravli",
+			"image": "/instagram.png"
+		},
+		{
+			"title": "E-Mail",
+			"url": "mailto:onur@ravli.co",
+			"image": "/mail.png"
+		},
+		{
+			"title": "CV",
+			"url": "#",
+			"image": "/cv.png"
+		}
+	]
+}
